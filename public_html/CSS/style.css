@@ -1,0 +1,32 @@
+/**
+* Folha de estilo principal 
+*@Matheus Muniz
+*/
+/************ importando font ***********/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/************Principal************/
+body{
+	font-family: 'Open Sans', sans-serif; color :
+	 #00ff00;
+	/* background-color: #8e8e8e;"*/
+
+
+	/*Uso de uma imagem como BackGround
+	 font-size: 1em; /*1 em = 16px*/
+	 /* background-image: url("../imagens/fundo.jpg");
+	 background-attachment: fixed; */
+	 background-size: 1em; /* em = 16px
+}
+#main{
+	max-width: 1024px;
+	margin: 0 auto;/*centralizar a div*/
+	background-color: #ffffff;
+}
+
+/********************Tratamento responsivo**********/
+
+img {
+	max-width: 100%; /*todas imagens do site ficam responsivas */
+}
+
