@@ -1,0 +1,24 @@
+/**
+Estudo do float
+@Matheus Muniz
+Data 26/06/2018
+*/
+#vermelho{
+	background-color: #DC143C;
+	width: 250px;
+	height: 250px;
+	float: left;
+}
+
+#verde{
+	background-color: #00FF7F;
+	width: 250px;
+	height: 250px;
+	float: left;
+}
+#azul{
+	background-color: #0000FF;
+	width: 250px;
+	height: 250px;
+	float: left;
+}
