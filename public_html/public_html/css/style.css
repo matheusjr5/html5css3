@@ -1,0 +1,204 @@
+/**
+* Folha de estilo principal do site html5 + css3
+* @author José de Assis
+*/
+
+/************* Importando fonts **************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/************* Principal **************/
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #e8e8e8;
+	/* Uso de uma imagem como background */
+	/*background-image: url("../imagens/background.jpg");*/
+	/*background-attachment: fixed; /*fixa o background*/
+	/*background-size: cover; /*manter o tamanho de forma responsiva */
+	font-size: 1em; /*1 em = 16px */
+}   
+
+#main{
+	max-width: 1024px;
+	background-color: #ffffff;
+	margin: 0 auto; /*centralizar a div */
+	margin-top: 50px; /*box model*/
+}
+
+/************** Cabeçalho ***************/
+header{
+	width: 100%;
+	height: 150px;
+	/*background-color: #ffff00; /*dica para ajustar elementos*/
+	margin-bottom: 20px;
+}
+
+header img{
+	width: 195px;
+	height: 150px;
+	margin-top: 10px;
+	margin-left: 40px;
+}
+
+/************** Menu **************/
+
+nav{
+	width: 100%;
+	max-width: 1024px;	
+	position: absolute;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav > ul > li{
+	float: left;
+	width: 24.903%; /* 4 elementos do menu primário */
+	border-right: 1px solid #cc470d;
+}
+
+nav >ul >li > a{
+	font-size: 1.125em;
+} 
+
+nav ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	padding: 15px;
+	display: block;
+	text-align: center;
+	background-color: #e15a1f; 	
+}
+
+nav ul li a:hover{
+	background-color: #cc470d;
+	transition: all 0.27s; /* efeito transição (0 a 1) */
+
+
+    
+}
+
+nav li ul{
+	display: none;
+}
+
+nav li:hover ul{
+	display: block;
+	position: center;
+
+}
+
+/* Desenhando um triângulo no css */
+.Detalhes:after{ /*atributo after (após o conteúdo)*/
+	content:''; /* content: insere um conteúdo no css */
+	border: 5px solid transparent;
+	/*border-left-color: #ff0000;*/
+	/*border-right-color: #00ff00;*/
+	/*border-bottom-color: #0000ff;*/
+	border-top-color: #e8e8e8;
+	/* alinhamento */
+	display: inline-block;
+	vertical-align: middle;	
+}
+
+.Mobile{
+	display: none;
+}
+
+/* Classe usada pelo JS para fixar o menu */
+.Fixar{
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+/****** RODAPÉ ***********/
+footer{
+	width: 100%;
+	background-color: #e15a1f;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.75em;
+}
+
+/************** Tratamento responsivo *****************/
+
+/******* imagens do site *******/
+img {
+	max-width: 100%; /* todas as imagens do site ficam responsivas */
+}
+
+
+/************* Smartphone ***************/
+
+@media screen and (max-width: 480px){
+	
+	/******** principal ********/
+
+	body{
+		margin: 0px;
+	}
+
+	#main{
+		margin: 0px;
+	}
+	/************* CABEÇALHO *******/
+	header{
+	/*background-color: #ffff00; /*dica para ajustar elementos*/
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+header img{
+	margin-top: 0px;
+	margin-left: 0px;
+}
+	
+	/********** MENU **********/
+	
+	.Mobile{
+		display: block;
+		background-color: #000616;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 15px;
+	}
+
+	nav > ul > li{
+		float: none;
+		width: 100%;
+	}
+
+	nav ul{
+		width: 100%;
+		display: none;
+	}
+	
+	/* ajuste */
+	nav ul li a{
+		text-align: left;
+	}
+
+	nav ul li a:hover{
+		transition: all 0s; /*remover efeito de transição*/		
+	}
+
+	nav li ul li{
+		background-color: #044364;
+	}
+	nav li ul li a {
+		background-color: #000000;
+		padding: 20px;
+	}
+	/*IMPORTANTE Para ux no dípositivo mobile,
+	não exibir o segundo nivel do menu enquanto conteudo
+	não for clicado */
+	nav li:hover ul{
+		display: none;
+	}
+	
+}
