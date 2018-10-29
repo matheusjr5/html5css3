@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- favicon -->
-	<link rel="icon" href="imagens/subindo.png"> 
-	<title>Venha conhecer o Mundo </title>
+	<link rel="icon" href="imagens/favicon.png"> 
+	<title>Contato - html5 css3</title>
 	<!-- SEO Importante -->
-	<meta name = "description" content = "Aprenda html5 e css3 de forma simples e prática">
+	<meta name = "description" content = "Página de contato">
 	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
 		<meta name="viewport" content="width=device-width,  initial-scale=1.0">
 	<!-- Link com a folha de estilo -->
@@ -42,55 +42,27 @@
 				<li><a href="contato.html">Contato</a></li>
 			</ul>
 		</nav>
+		<!-- formulário de contato -->
+		<div id="contato">
+			<h1>Formulario de Contato</h1>
+			<form action="formulario.php" method="POST">
+				<input type="text" name="nome" placeholder="nome">
+				<input type="text" name="email" placeholder="email">
+				<textarea name="mensagem" placeholder="mensagem"></textarea>
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
 
-		<!-- conteúdo -->
-		<section id="banner">
-			<img src="imagens/pista.jpg" alt="Curso básico de html5 e css3">
-			<h1>Venha Realizar o sonho da Sua viagem com a Famila.</h1>
-		</section>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/lMyf6COj1wY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-		<section id="heading">
-			<h2><span id="aviao">Passagens a preço que cabem no seu orçamento</span></h2>
-		</section>
-
-			<img src="imagens/piloto.jpg" alt="">
-
-		<section id="destaque">
-
-			<!-- bloco 1 -->
-			<div class="blocos">
-			<img src="imagens/chale.png" alt="">
-			<h2>Aproveite o melhor de nossas Comodidades</h2>
-			<p>Chalés </p>
-			<a href="https://pousadasemmonteverde.com.br/esquilo-hotel-chales/" target="_blank">Venha conhecer</a>
-			</div>
-			
-			<!-- bloco 2 -->
-			<div class="blocos">
-			<img src="imagens/familia.png" alt="">
-			<h2>Aproveite com a familia a viagem de suas vidas</h2>
-			<p>Viagens em Familia </p>
-			<a href="conteudo/html5.html">Venha conhecer</a>
-			</div>
-
-			<!-- bloco 3 -->
-			<div class="blocos">
-			<img src="imagens/mansao.jpg" alt="">
-			<h2>Todo nosso conforto ao seu favor</h2>
-			<p>Conheça nossos Hotéis </p>
-			<a href="conteudo/css3.html">Venha conhecer</a>
-			</div>
-			
-		</section>
-
+		
 		<!-- rodapé -->
 		<footer>
-			<p>©2018 - Aluno JotaPe</p>			
+			<p>©2018 - Matheus Muniz</p>			
 		</footer>
 	</div>
 <script src="js/menuresponsivo.js"></script>
 <script src="js/fixamenu.js"></script>
 <script src="js/removeclick.js"></script>	
-<script src="js/tela.js"></script>
 </body>
 </html>

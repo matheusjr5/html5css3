@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<!-- favicon -->
+	<link rel="icon" href="../imagens/subindo.png"> 
+	<title>CSS3</title>
+	<!-- SEO Importante -->
+	<meta name = "description" content = "Aprenda css3 de forma simples e prática">
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+		<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+	<!-- Link com a folha de estilo -->
+	<link rel="stylesheet" href="../css/style.css">
+	<!-- CDN Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- estrutura principal -->
+	<div id="main">
+
+		<!-- cabeçalho -->
+		<header>
+			<a href="index.html"><img src="../imagens/subindo.png" title="HTML5 + CSS3" alt="Logotipo do site"></a>
+		</header>
+
+		<!-- menu -->
+		<nav class="Menu">
+			<!-- Classe usada para fixar menu no JS -->
+		<!-- &#9776 (desenho 3 linhas horizontais-->
+		<a href="#" class="Mobile">&#9776; Menu</a>
+			<!-- ul>li*4>a -->
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../sobre.html">Sobre</a></li>
+				<li><a href="#" class="Detalhes">Conteúdo </a>
+					<ul>
+						<li><a href="html5.html">Passagens</a></li>
+						<li><a href="css3.html">Hotéis</a></li>
+						<li><a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqyuy7U1YjGgBv0x2Hzuw569" target="_blank">Nossas Viangens</a></li>
+					</ul>
+				</li>
+				<li><a href="../contato.html">Contato</a></li>
+			</ul>
+		</nav>
+		<section id="CCS">
+			<h1>Nossos Melhores Hotéis</h1>
+			<div></div>
+			
+			<img src="../imagens/hotel.png">
+			<p>algo </p>
+			<img src="../imagens/guguo.jpg">
+
+		</section>
+
+		<!-- rodapé -->
+		<footer>
+			<p>©2018 - Matheus Muniz Da Silva</p>			
+		</footer>
+	</div>
+<script src="../js/menuresponsivo.js"></script>
+<script src="../js/fixamenu.js"></script>
+<script src="../js/removeclick.js"></script>	
+</body>
+</html>
